@@ -25,7 +25,7 @@ WORKDIR /app
 COPY ./react ./
 
 # Amend baseurl to string
-RUN sed -i -e "s/let baseurl.*/let baseurl = ''/" ./src/Dashboard.js
+RUN sed -i -e "s/let baseurl.*/let baseurl = ''/" ./src/Dashboard2.js
 
 # Install dependencies and build static files
 RUN npm install && npm run build
